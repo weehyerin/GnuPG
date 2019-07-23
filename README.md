@@ -1,4 +1,4 @@
-### What is GnuPG
+## What is GnuPG
 -----------
 ###### GnuPG : 통신상에서 혹은 데이터를 저장할 때 보안을 지키는 도구
 
@@ -124,11 +124,18 @@ gpg --armor --recipient 2162A0166BA3B8F4 --encrypt (파일 이름)
 ~~~
 <img width="623" alt="스크린샷 2019-07-23 오후 4 06 54" src="https://user-images.githubusercontent.com/37536415/61690284-eeb94e80-ad63-11e9-9278-11908312a44f.png">
 
+- .asc 파일 생성(암호화 된 파일)
 
+### 암호화된 파일 복호화 하기
 
+~~~
+gpg -o decrypted.txt --decrypt testmsg.txt.asc
+~~~
+- 암호화된 파일이었던 testmsg.txt.asc를 복호화하여 decrypted.txt로 저장
 
-
-
-
+~~~
+gpg -o decrypted.wav --decrypt sample.wav.asc
+~~~
+- 암호화된 파일이었던 sample.wav.asc를 복호화하여 decrypted.wav로 저장
 
 
